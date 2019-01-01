@@ -17,12 +17,12 @@
 (spacemacs|define-jump-handlers enh-ruby-mode)
 (spacemacs|define-jump-handlers ruby-mode)
 
-(defvar ruby-enable-enh-ruby-mode nil
+(defvar ruby-enable-enh-ruby-mode `enh-ruby-mode'
   "If non-nil, use `enh-ruby-mode' package instead of the built-in Ruby Mode.")
 
-(defvar ruby-version-manager nil
+(defvar ruby-version-manager `rvm'
   "If non nil, defines the Ruby version manager.
 Possible values are `rbenv', `rvm' or `chruby'.)")
 
-(defvar ruby-test-runner 'ruby-test
+(defvar ruby-test-runner `rspec'
   "Test runner to use. Possible values are `ruby-test', `minitest' or `rspec'.")
